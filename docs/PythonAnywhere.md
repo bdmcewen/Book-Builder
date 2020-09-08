@@ -27,10 +27,10 @@
 
 
 ### Clone your git repository
-* Visit your [Github Repo](https://github.com/Mark-Seaman/UNC-BACS-350.git)
+* Visit your [Github Repo](https://github.com/Mark-Seaman/Book-Builder.git)
 * Clone the repo
     
-    git clone https://github.com/Mark-Seaman/UNC-BACS-350.git
+    git clone https://github.com/Mark-Seaman/Book-Builder.git
 
 
 ### Create Virtual Environment
@@ -66,8 +66,29 @@
 ![](img/pa-server.png)
 
 
+### Configure WSGI Python File
+* Edit Config file for app runner
+* WSGI - Web Server Gateway Interface
+
+
+/var/www/markseaman_pythonanywhere_com_wsgi.py
+
+    # +++++++++++ DJANGO +++++++++++
+    import os
+    import sys
+
+    path = '/home/markseaman/Book-Builder/bookbuilder'
+    if path not in sys.path:
+        sys.path.append(path)
+
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'bookbuilder.settings'
+
+    ## then:
+    from django.core.wsgi import get_wsgi_application
+    application = get_wsgi_application()
+
+
 ### Configure Code Settings
-* Edit WSGI Python File
 
 ![](img/pa-code.png)
 

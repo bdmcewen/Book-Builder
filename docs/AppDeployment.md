@@ -19,3 +19,22 @@
 
 ### Allowed Hosts
 
+Allow connection as Python Anywhere
+
+settings.py
+
+    ALLOWED_HOSTS = ['markseaman.pythonanywhere.com']
+
+
+### Git Pull
+
+    cd Book-Builder
+    git pull   # Brings in new code
+    
+### Reload Server
+
+    Visit page https://www.pythonanywhere.com/user/markseaman/
+    
+    View error logs
+    
+
