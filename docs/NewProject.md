@@ -110,4 +110,26 @@ Test the application
     browse to http://127.0.0.1:8001/
     
 
+ALLOWED_HOSTS = ['markseaman.pythonanywhere.com']
+
+
+wsgi.py
+
+# +++++++++++ DJANGO +++++++++++
+# To use your own django app use code like this:
+import os
+import sys
+
+## assuming your django settings file is at '/home/markseaman/UNC-BACS-200/bacs350/bacs350/settings.py'
+## and your manage.py is is at '/home/markseaman/UNC-BACS-200/bacs350/manage.py'
+path = '/home/markseaman/Book-Builder/bookbuilder'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'bacs350.settings'
+
+## then:
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
     
