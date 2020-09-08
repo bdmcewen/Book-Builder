@@ -5,6 +5,8 @@
 It takes about 50 specific skills to develop web pages using HTML and CSS.
 
 Here are the skills that you need for success.
+
+
 ## Software Engineering
 * [Issue Tracking](Issues.md)
 
