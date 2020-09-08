@@ -1,12 +1,12 @@
 # Tutorial Documents
 
-## Github
+50 Skills for Web App Development
 
-* [Register a Github account](GithubAccount.md)
-* [Create a Github repository](GithubRepo.md)
-* [Publish Github Pages](GithubPages.md)
-* [Use Github Desktop](GithubDesktop.md)
-* [Command line for Git](GitCommandLine.md)
+It takes about 50 specific skills to develop web pages using HTML and CSS.
+
+Here are the skills that you need for success.
+## Software Engineering
+* [Issue Tracking](Issues.md)
 
 
 ## Developer Setup
@@ -16,20 +16,27 @@
 * [Edit, Browse, Deploy](Workflow.md)
 
 
-## Start a Project
+## Github
 
+* [Register a Github account](GithubAccount.md)
+* [Create a Github repository](GithubRepo.md)
+* [Publish Github Pages](GithubPages.md)
+* [Command Line](CommandLine.md)
+
+
+## Django
+
+* [What Is Django?](WhatIsDango.md)
+* [Setup Python](SetupPython.md)
 * Write Hello World App
 * Start a Django Project
 * Start a Django App
 
 
-## Web Hosting at Python Anywhere
+## Web App Hosting
 
-* [Setup Python Anywhere](PythonAnywhere.md)
-    * Register at Python Anywhere
-    * Running the Console
-    * Create a Web App
-    * Configure the Web App
+* [Python Anywhere](PythonAnywhere.md)
+
 
 ## Testing
 
