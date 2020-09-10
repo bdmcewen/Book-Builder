@@ -30,14 +30,13 @@ Here are the skills that you need for success.
 
 * [What Is Django?](WhatIsDango.md)
 * [Setup Python](SetupPython.md)
-* Write Hello World App
-* Start a Django Project
-* Start a Django App
+* [New Project](NewProject.md)
 
 
 ## Web App Hosting
 
 * [Python Anywhere](PythonAnywhere.md)
+* [App Deployment](App Deployment.md)
 
 
 ## Testing
