@@ -38,7 +38,7 @@ Here are the skills that you need for success.
 * [Python Anywhere](PythonAnywhere.md)
 * [Python Anywhere Demo](PythonAnywhereDemo.md)
 * [UNC BACS 350 - Lesson 7 - Python Anywhere](https://shrinking-world.com/course/bacs350/lesson/07)
-* [App Deployment](AppDeployment)
+* [App Deployment](AppDeployment.md)
 
 
 ## Testing
