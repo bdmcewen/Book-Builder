@@ -15,7 +15,7 @@
 
 ### Learn Linux Commands
 * Master a few command line basics
-* Read [Command Line](CommandLine)
+* Read [Command Line](CommandLine.md)
 * Essential commands: pwd, cs, ls, rm
 
 

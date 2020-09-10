@@ -30,7 +30,8 @@ settings.py
 
     cd Book-Builder
     git pull   # Brings in new code
-    
+
+
 ### Reload Server
 
     Visit page https://www.pythonanywhere.com/user/markseaman/
