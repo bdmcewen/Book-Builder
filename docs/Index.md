@@ -36,7 +36,9 @@ Here are the skills that you need for success.
 ## Web App Hosting
 
 * [Python Anywhere](PythonAnywhere.md)
-* [App Deployment](App Deployment.md)
+* [Python Anywhere Demo](PythonAnywhereDemo.md)
+* [UNC BACS 350 - Lesson 7 - Python Anywhere](https://shrinking-world.com/course/bacs350/lesson/07)
+* [App Deployment](AppDeployment)
 
 
 ## Testing
