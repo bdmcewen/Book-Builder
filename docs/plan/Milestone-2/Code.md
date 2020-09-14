@@ -27,8 +27,8 @@ Goal: Test-driven development workflow
 
 
 ### Create New Project
-* [Create a new Django Project for Book Builder](../../docs/NewProject.md)
-* [Code Structure for Book Builder](../../docs/CodeStructure.md)
+* [Create a new Django Project for Book Builder](../../NewProject.md)
+* [Code Structure for Book Builder](../../CodeStructure.md)
 
 
 ### Book Builder - Test-driven development workflow
