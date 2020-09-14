@@ -23,7 +23,7 @@ tree bookbuilder
     └── manage.py
     
     
-The settings.py file runs the app startup.
+The [settings.py](../bookbuilder/bookbuilder/settings.py) file runs the app startup.
 
 This is in the "bookbuilder" app folder.
 
@@ -39,8 +39,8 @@ The Django Book Builder project has one Django app called "book".
 "book" holds 
 
 * the data models ([models.py](../bookbuilder/book/models.py))
-* the views for books and users (views.py)
-* the URL routes (urls.py)
+* the views for books and users ([views.py](../bookbuilder/book/views.py))
+* the URL routes ([urls.py](../bookbuilder/book/urls.py))
 
 
 ## HTML Templates
