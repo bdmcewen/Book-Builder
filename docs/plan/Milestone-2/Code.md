@@ -9,23 +9,13 @@
 , [Design.md](Design.md)
 , [Code.md](Code.md)
 , [Test.md](Test.md)
-
-
-
 * File: Milestone-2/Code.md
-
 * URL: https://github.com/Mark-Seaman/Mark-Seaman.github.io/blob/master/BookBuilder/Milestone-2/Code.md
-
 * Documents: Documents/swplan/BookBuilder
-
 * Git Repo: Mark-Seaman.github.io
 
 
-
-
 ### Milestone 2. Technology Proven
-
-
 
 Role: Programmer - Code
 
@@ -36,8 +26,12 @@ Goal: Test-driven development workflow
 * Document workflow built around tests
 
 
+### Create New Project
+* [Create a new Django Project for Book Builder](../docs/NewProject.md)
+* [Code Structure for Book Builder](CodeStructure.md)
 
-## Book Builder - Test-driven development workflow
+
+### Book Builder - Test-driven development workflow
 
 
 

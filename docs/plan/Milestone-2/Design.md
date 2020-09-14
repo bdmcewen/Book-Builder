@@ -57,7 +57,7 @@ and the Views that will be implemented.
 * The boxes represent data classes and database tables
 * The arrows represent object references and database joins
 
-![](../../img/Book_Data.png)
+![](img/Book_Data.png)
 
 
 
