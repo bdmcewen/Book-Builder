@@ -27,18 +27,33 @@ Goal: Test-driven development workflow
 
 
 ### Create New Project
-* [Create a new Django Project for Book Builder](../docs/NewProject.md)
-* [Code Structure for Book Builder](CodeStructure.md)
+* [Create a new Django Project for Book Builder](../../docs/NewProject.md)
+* [Code Structure for Book Builder](../../docs/CodeStructure.md)
 
 
 ### Book Builder - Test-driven development workflow
-
-
-
-### Build simple app
+* Developer tools setup
+* Workflow
+    * Pull code
+    * Feature Loop
+        * Create a failing test
+        * Create the code to pass the test
+        * Save the test code for later
+        * Commit and push changes
+        * Select next feature
+    * Run all tests
+    * Fix all defects
+    * Push code
 
 
 ### Build simple test
+* Setup context
+* Do an action
+* Verify the result
 
+Example:
 
-### Document workflow built around tests
+* Add Author "Mark Seaman"
+* Add author again
+* Verify that there is only one
+
