@@ -41,6 +41,10 @@ User Stories
 
 NOTE: Readers, Authors, and Book can be modified but not deleted.
 
+Example:   Author support operations for Create, Read, Update.  This means
+the the list of available authors can be created and modified.  The arrow
+from Book to Author means that every book has an Author.
+
 
 ### Design Architecture
 * Apps = Data + Views
@@ -83,7 +87,12 @@ Data Classes and database tables
     * alt
     * order
 
-    “*” makes a link to another table
+“*” makes a link to another table.  This is implemented 
+by a foreign key relationship between the two tables.  
+
+Example: Books have Authors so the Book data model has
+a ForeignKeyField that points to the Author Model class.
+
 
 ### App Views
 
