@@ -44,6 +44,15 @@ Goal: Test-driven development workflow
     * Run all tests
     * Fix all defects
     * Push code
+* [Book Builder Tests](../../DjangoTests.md)
+
+
+### View Prototype Code
+* [Book Builder View Prototype](../../ViewPrototype.md)
+
+
+### Data Model Code
+* [Book Builder Data Models](../../DataModels.md)
 
 
 ### Build simple test
