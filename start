@@ -15,7 +15,6 @@ source $code/.venv/bin/activate
 
 # Aliases
 alias e='brackets'
-alias co="git add -A . && git commit -m \'$*\' && git push"
 alias code='d $code'
 alias docs='d $docs'
 alias gs='git status'
@@ -25,7 +24,7 @@ alias l='ls -al'
 
 # Functions
 
-function commit {
+function co {
     git status &&
     git add . &&
     git commit -m "$*" &&
