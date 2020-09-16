@@ -26,12 +26,19 @@ Here are the skills that you need for success.
 * [Command Line](CommandLine.md)
 
 
-## Django
+## Design
 
 * [What Is Django?](WhatIsDango.md)
 * [Setup Python](SetupPython.md)
 * [Debug Django Admin](DjangoAdmin.md)
 * [New Project](NewProject.md)
+
+
+## Code
+* [View Prototype](ViewPrototype.md)
+* [Data Models](DataModels.md)
+* [Create New View](CreateNewView.md)
+* [Template View](TemplateView.md)
 
 
 ## Web App Hosting
@@ -46,4 +53,5 @@ Here are the skills that you need for success.
 
 * [Milestone-1/Test](../Milestone-1/Test.md)
 * [Test Docs](TestDocs)
+* [Django Tests](DjangoTests.md)
 
