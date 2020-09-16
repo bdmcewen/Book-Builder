@@ -52,6 +52,5 @@ Here are the skills that you need for success.
 ## Testing
 
 * [Milestone-1/Test](../Milestone-1/Test.md)
-* [Test Docs](TestDocs)
 * [Django Tests](DjangoTests.md)
 
