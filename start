@@ -1,0 +1,50 @@
+#!/bin/bash
+# Startup the Book Builder dev environment
+
+# Start in the root directory
+export p=~/Github/Book-Builder
+export code=$p/bookbuilder
+export docs=$p/docs
+
+cd $p
+
+
+# Activate the Python Env
+source $code/.venv/bin/activate
+
+
+# Aliases
+alias e='brackets'
+alias co="git add -A . && git commit -m \'$*\' && git push"
+alias code='d $code'
+alias docs='d $docs'
+alias gs='git status'
+alias wp='which python && pip freeze'
+alias l='ls -al'
+
+
+# Functions
+
+function commit {
+    git status &&
+    git add . &&
+    git commit -m "$*" &&
+    git push
+}
+
+function d {
+    d=$1
+    [[ "$1" == "" ]] && d="$p"
+    echo $d && cd $d && ls -al
+}
+
+function dj {
+    cd $p/bookbuilder && ./manage.py $* && cd - >/dev/null
+}
+
+# List the path in readable form
+function path {
+    echo $PATH | perl -pe s/:/\\n/g
+}
+
+wp
