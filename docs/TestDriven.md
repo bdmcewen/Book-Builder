@@ -196,36 +196,49 @@ book/tests.py
         
 Refactored Tests
 
+    def create_test_user():
+        return get_user_model().objects.create_user(username='TEST_DUDE', email='me@here.com', password='secret')
+
     class AuthorTests(TestCase):
     
+        def check_author_name(self, pk, name):
+            a = Author.objects.get(pk=pk)
+            self.assertEqual(a.name, name)
+    
+        def check_author_user(self, pk, username):
+            a = Author.objects.get(pk=pk)
+            self.assertEqual(a.user.username, username)
+    
+        def check_num_authors(self, num):
+            self.assertEqual(len(list_authors()), num)
+    
         def setUp(self):
-            add_author(self.user, 'Charles Dickens')
+            self.user = create_test_user()
+            self.author = add_author(self.user, 'Charles Dickens')
     
         def test_author_model(self):
-            check_num_authors(self, 1)
-            check_author_name(self, 1, 'Charles Dickens')
-            check_author_user(self, 1, 'TEST_DUDE')
+            self.check_num_authors(1)
+            self.check_author_name(1, 'Charles Dickens')
+            self.check_author_user(1, 'TEST_DUDE')
     
         def test_create_author(self):
-            check_num_authors(self, 1)
+            self.check_num_authors(1)
             add_author(self.user, 'Jack London')
-            check_author_name(self, 2, 'Jack London')
-            check_author_user(self, 2, 'TEST_DUDE')
-            check_num_authors(self, 2)
+            self.check_author_name(2, 'Jack London')
+            self.check_author_user(2, 'TEST_DUDE')
+            self.check_num_authors(2)
     
         def test_list_authors(self):
-            check_num_authors(self, 1)
-            self.assertEqual(get_author('Charles Dickens'), 1)
-
+            self.check_num_authors(1)
+            self.assertEqual(get_author('Charles Dickens').pk, 1)
+    
         def test_update_author(self):
-            check_num_authors(self, 1)
+            self.check_num_authors(1)
             a = get_author('Charles Dickens')
             a.name = 'George Orwell'
             a.save()
-            check_author_name(self, 1, 'George Orwell')
+            self.check_author_name(1, 'George Orwell')
     
         def test_delete_author(self):
-            a = get_author('Charles Dickens')
-            a.delete()
-            check_num_authors(self, 1)
-
+            delete_author('Charles Dickens')
+            self.check_num_authors(0)
