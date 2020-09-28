@@ -12,6 +12,7 @@
         #{{ post.pk }}
         <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
     </h3>
+    <p>BODY:</p>
     <p>{{ post.body }}</p>
 </div>
 
