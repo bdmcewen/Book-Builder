@@ -1,4 +1,6 @@
 from django.urls import path
+from django.views.generic import TemplateView
+
 
 from .views import (
     BlogListView,
@@ -14,4 +16,5 @@ urlpatterns = [
     path('<int:pk>/', BlogDetailView.as_view(), name='post_detail'),
     path('<int:pk>/edit/', BlogUpdateView.as_view(), name='post_edit'),
     path('', BlogListView.as_view(), name='post_list'),
+    path('index', TemplateView.as_view(template_name="index.html"))
 ]

@@ -38,7 +38,7 @@ function d {
 }
 
 function dj {
-    cd $p/bookbuilder && ./manage.py $* && cd - >/dev/null
+    python manage.py $*
 }
 
 # List the path in readable form
